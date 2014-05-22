@@ -17,7 +17,7 @@ Topics on Quora have location data optionally associated with them, allowing the
 
 Your task will be to write a program that will be able to find topics or questions that are near to a given input location, up to a specified limit.
 
-<strong>Input format (read from STDIN):</strong>
+<strong>Input format (read from STDIN):</strong><br>
 The first line of input will be 3 integers: number of topics T, number of questions Q, and number of queries N.
 
 There will be T lines following that, each with a topic id integer, and two doubles representing that topic's location (you can consider the points to be located on a XY plane, location of a entity is in form of its x and y coordinate in the plane).
@@ -42,7 +42,7 @@ t 2 0.0 0.0 <br>
 q 5 100.0 100.0 <br>
 
 
-<strong>Output format (write to STDOUT):</strong>
+<strong>Output format (write to STDOUT):</strong><br>
 For each query line given in the input, you are to output the ids of the nearest entities in ascending order of distance from the query location, up to the specified number of results.  When there is a tie between different entities in the ordering due to equal distances (threshold of 0.001 for equality comparisons), the entity with the larger id should be ranked first.
 
 Distance of a question from a point is the minimum of the distance of all topics associated with that question.
@@ -53,7 +53,7 @@ Sample Output:
 5 2 1 0 <br>
 
 
-Explanation:
+Explanation:<br>
 There are 3 topics with ids 0, 1 and 2. There are also 6 questions, with ids 0 to 5. We first ask a nearest topic query. 
 The closest 2 topics to (0.0, 0.0) are topics 0 and 1.
 The next query asks for upto 5 closest questions to (100.0, 100.0). Since questions 5 and 2 are tagged with topic 2 located at (2.0, 2.0), they are closest to the query location.
@@ -61,7 +61,7 @@ Because of the tie in distance, we put question 5 before question 2.
 The next closest question is question 1, followed by question 0.
 We do not output questions 3 or 4 because there are no topics associated with them.
 
-<strong>Constraints: </strong><br>
+<strong>Constraints: </strong><br><br>
 1 <= T <= 10000 <br>
 1 <= Q <= 1000 <br>
 1 <= N <= 10000 <br>
