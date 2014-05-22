@@ -61,7 +61,7 @@ Because of the tie in distance, we put question 5 before question 2.
 The next closest question is question 1, followed by question 0.
 We do not output questions 3 or 4 because there are no topics associated with them.
 
-<strong>Constraints: </strong><br><br>
+<strong>Constraints: </strong><br>
 1 <= T <= 10000 <br>
 1 <= Q <= 1000 <br>
 1 <= N <= 10000 <br>
