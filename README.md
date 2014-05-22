@@ -28,18 +28,18 @@ The next N lines will consist of a char, an integer and two doubles each, repres
 
 Sample Input:
 
-3 6 2
-0 0.0 0.0
-1 1.0 1.0
-2 2.0 2.0
-0 1 0
-1 2 0 1
-2 3 0 1 2
-3 0
-4 0
-5 2 1 2
-t 2 0.0 0.0
-q 5 100.0 100.0
+3 6 2 <br>
+0 0.0 0.0 <br>
+1 1.0 1.0 <br>
+2 2.0 2.0 <br>
+0 1 0 <br>
+1 2 0 1 <br>
+2 3 0 1 2 <br>
+3 0 <br>
+4 0 <br>
+5 2 1 2 <br>
+t 2 0.0 0.0 <br>
+q 5 100.0 100.0 <br>
 
 
 Output format (write to STDOUT):
@@ -49,8 +49,8 @@ Distance of a question from a point is the minimum of the distance of all topics
 
 Sample Output:
 
-0 1
-5 2 1 0
+0 1 <br>
+5 2 1 0 <br>
 
 
 Explanation:
@@ -61,18 +61,18 @@ Because of the tie in distance, we put question 5 before question 2.
 The next closest question is question 1, followed by question 0.
 We do not output questions 3 or 4 because there are no topics associated with them.
 
-Constraints:
-1 <= T <= 10000
-1 <= Q <= 1000
-1 <= N <= 10000
-Integer ids are between 0 and 100000 inclusive.
-Number of topics associated with a question is not more than 10.
-The number of results required for a query is not more than 100.
+Constraints: <br>
+1 <= T <= 10000 <br>
+1 <= Q <= 1000 <br>
+1 <= N <= 10000 <br>
+Integer ids are between 0 and 100000 inclusive. <br>
+Number of topics associated with a question is not more than 10. <br>
+The number of results required for a query is not more than 100. <br>
 0.0 <= x,y <= 1000000.0 (10^6)
 
 For the large testcases, all topic x,y co-ordinates will be approximately uniformly distributed over the bounds.
 
 You should aim to have your algorithm be fast enough to solve our largest test inputs in under 5 seconds, or be as close to that as possible.
 
-Notes
+Notes <br>
 Location data will be specified as cartesian co-ordinates on a plane for simplicity.  In reality, our infrastructure utilizes the Haversine formula (http://www.movable-type.co.uk/sc...) to convert these co-ordinates.
